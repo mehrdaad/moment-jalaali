@@ -48,7 +48,7 @@ describe('moment', function() {
     it('should parse when only Jalaali month string is in the format', function() {
       var m = moment('1981 Amo 17', 'YYYY jMMM D')
       m.format('YYYY-MM-DD').should.be.equal('1981-07-17')
-      m = moment('1981 Amordaad 17', 'YYYY jMMMM D')
+      m = moment('1981 Mordad 17', 'YYYY jMMMM D')
       m.format('YYYY-MM-DD').should.be.equal('1981-07-17')
     })
 
@@ -168,7 +168,7 @@ describe('moment', function() {
 
     it('should format with jMMMM', function() {
       var m = moment('1981-08-17')
-      m.format('jMMMM').should.be.equal('Amordaad')
+      m.format('jMMMM').should.be.equal('Mordad')
     })
 
     it('should format with jDo', function() {
@@ -258,11 +258,11 @@ describe('moment', function() {
       m.format('LTS').should.be.equal('12:00:00 AM')
       m.format('L').should.be.equal('1360/05/26')
       m.format('l').should.be.equal('1360/5/26')
-      m.format('LL').should.be.equal('26 Amordaad 1360')
+      m.format('LL').should.be.equal('26 Mordad 1360')
       m.format('ll').should.be.equal('26 Amo 1360')
-      m.format('LLL').should.be.equal('26 Amordaad 1360 12:00 AM')
+      m.format('LLL').should.be.equal('26 Mordad 1360 12:00 AM')
       m.format('lll').should.be.equal('26 Amo 1360 12:00 AM')
-      m.format('LLLL').should.be.equal('Monday, 26 Amordaad 1360 12:00 AM')
+      m.format('LLLL').should.be.equal('Monday, 26 Mordad 1360 12:00 AM')
       m.format('llll').should.be.equal('Mon, 26 Amo 1360 12:00 AM')
     })
    
@@ -272,11 +272,11 @@ describe('moment', function() {
       m.format('LTS').should.be.equal('12:15:45 PM')
       m.format('L').should.be.equal('1360/05/26')
       m.format('l').should.be.equal('1360/5/26')
-      m.format('LL').should.be.equal('26 Amordaad 1360')
+      m.format('LL').should.be.equal('26 Mordad 1360')
       m.format('ll').should.be.equal('26 Amo 1360')
-      m.format('LLL').should.be.equal('26 Amordaad 1360 12:15 PM')
+      m.format('LLL').should.be.equal('26 Mordad 1360 12:15 PM')
       m.format('lll').should.be.equal('26 Amo 1360 12:15 PM')
-      m.format('LLLL').should.be.equal('Monday, 26 Amordaad 1360 12:15 PM')
+      m.format('LLLL').should.be.equal('Monday, 26 Mordad 1360 12:15 PM')
       m.format('llll').should.be.equal('Mon, 26 Amo 1360 12:15 PM')
     })
   })

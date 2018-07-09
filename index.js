@@ -199,7 +199,7 @@ extend(getPrototypeOf(moment.localeData()),
               , 'Ordibehesht'
               , 'Khordaad'
               , 'Tir'
-              , 'Amordaad'
+              , 'Mordad'
               , 'Shahrivar'
               , 'Mehr'
               , 'Aabaan'

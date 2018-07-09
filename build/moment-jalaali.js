@@ -79,6 +79,11 @@ module.exports =
   Converts a Gregorian date to Jalaali.
 */
 function toJalaali(gy, gm, gd) {
+  if (Object.prototype.toString.call(gy) === '[object Date]') {
+    gd = gy.getDate()
+    gm = gy.getMonth() + 1
+    gy = gy.getFullYear()
+  }
   return d2j(g2d(gy, gm, gd))
 }
 
@@ -510,7 +515,7 @@ extend(getPrototypeOf(moment.localeData()),
               , 'Ordibehesht'
               , 'Khordaad'
               , 'Tir'
-              , 'Amordaad'
+              , 'Mordad'
               , 'Shahrivar'
               , 'Mehr'
               , 'Aabaan'

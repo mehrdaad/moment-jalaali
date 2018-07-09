@@ -1,10 +1,10 @@
 {
-  "name": "moment-jalaali",
-  "version": "0.7.4",
+  "name": "react-native-moment-jalaali",
+  "version": "0.1.0",
   "description": "Jalaali (Jalali, Persian, Khorshidi, Shamsi) calendar system plugin for moment.js.",
   "author": {
-    "name": "Behrang Noruzi Niya",
-    "email": "behrangn@gmail.com"
+    "name": "Mehrdad Shokri",
+    "email": "code.poet95@gmail.com"
   },
   "license": "MIT",
   "keywords": [
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/behrang/moment-jalaali.git"
+    "url": "git://github.com/mehrdaad/moment-jalaali.git"
   },
   "devDependencies": {
     "chai": "^4.1.2",
