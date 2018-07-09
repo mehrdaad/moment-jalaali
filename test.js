@@ -614,7 +614,7 @@ describe('moment', function() {
       moment('1981-08-17', gf).isValid().should.be.true
       moment('1981-08-31', gf).isValid().should.be.true
       moment('1981-09-31', gf).isValid().should.be.false
-      moment('1360 mordaad 26', 'jYYYY jMMMM jD').isValid().should.be.false
+      moment('1360 amordad 26', 'jYYYY jMMMM jD').isValid().should.be.false
       moment('1360/05/26', jf).isValid().should.be.true
       moment('1360/05/31', jf).isValid().should.be.true
       moment('1360/07/30', jf).isValid().should.be.true
