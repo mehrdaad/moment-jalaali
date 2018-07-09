@@ -10,16 +10,16 @@
  */
 
 function require(name) {
-  var module = require.modules[name]
-  if (!module) throw new Error('failed to require "' + name + '"')
+  var module = require.modules[name];
+  if (!module) throw new Error('failed to require "' + name + '"');
 
   if (!('exports' in module) && typeof module.definition === 'function') {
-    module.client = module.component = true
-    module.definition.call(this, module.exports = {}, module)
-    delete module.definition
+    module.client = module.component = true;
+    module.definition.call(this, module.exports = {}, module);
+    delete module.definition;
   }
 
-  return module.exports
+  return module.exports;
 }
 
 /**
@@ -28,7 +28,7 @@ function require(name) {
 
 require.modules = {
   moment: { exports: moment }
-}
+};
 
 /**
  * Register module at `name` with callback `definition`.
@@ -41,7 +41,7 @@ require.modules = {
 require.register = function (name, definition) {
   require.modules[name] = {
     definition: definition
-  }
+  };
 };
 
 /**
@@ -55,10 +55,10 @@ require.register = function (name, definition) {
 require.define = function (name, exports) {
   require.modules[name] = {
     exports: exports
-  }
+  };
 };
 
-require.register('jalaali-js', function (exports, module) {
+require.register("jalaali-js", function (exports, module) {
 /*
   Expose functions.
 */
@@ -313,7 +313,7 @@ function mod(a, b) {
   return a - ~~(a / b) * b
 }
 })
-require.register('moment-jalaali', function (exports, module) {
+require.register("moment-jalaali", function (exports, module) {
 
 module.exports = jMoment
 
@@ -1213,13 +1213,13 @@ function div(a, b) {
 function mod(a, b) {
   return a - ~~(a / b) * b
 }
-})
+});
 
-if (typeof exports == 'object') {
-  module.exports = require('moment-jalaali')
-} else if (typeof define == 'function' && define.amd) {
-  define([], function(){ return require('moment-jalaali') })
+if (typeof exports == "object") {
+  module.exports = require("moment-jalaali");
+} else if (typeof define == "function" && define.amd) {
+  define([], function(){ return require("moment-jalaali"); });
 } else {
-  this['moment'] = require('moment-jalaali')
+  this["moment"] = require("moment-jalaali");
 }
-})()
+})();

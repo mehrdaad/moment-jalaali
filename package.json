@@ -26,9 +26,9 @@
     "prepublishOnly": "npm run build",
     "clean": "rimraf build"
   },
-  "homepage": "https://github.com/behrang/moment-jalaali",
+  "homepage": "https://github.com/mehrdad/moment-jalaali",
   "bugs": {
-    "url": "https://github.com/behrang/moment-jalaali/issues"
+    "url": "https://github.com/mehrdad/moment-jalaali/issues"
   },
   "repository": {
     "type": "git",
