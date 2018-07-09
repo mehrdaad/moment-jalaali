@@ -216,7 +216,7 @@ extend(getPrototypeOf(moment.localeData()),
                     , 'Ord'
                     , 'Kho'
                     , 'Tir'
-                    , 'Amo'
+                    , 'Mor'
                     , 'Sha'
                     , 'Meh'
                     , 'Aab'
